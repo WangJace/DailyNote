@@ -1,0 +1,18 @@
+PODS:
+  - BmobSDK (2.1.5)
+  - CorePlot (2.2)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - BmobSDK
+  - CorePlot
+  - SnapKit
+
+SPEC CHECKSUMS:
+  BmobSDK: 9b4ae6d8de903affaee9703cf082f7f6b03ceba4
+  CorePlot: cbe0c6e14220705e32e06a89c7d6a5a908b7d7d8
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: e1415d210dbec7f76310d4382cda4a6eb14e2687
+
+COCOAPODS: 1.1.1

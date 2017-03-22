@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WJRegisterViewController" customModule="DailyNote" customModuleProvider="target">
+            <connections>
+                <outlet property="confirmTextField" destination="xuU-G7-aKu" id="U1Y-Jn-Yes"/>
+                <outlet property="pwdTextField" destination="eGT-rf-yc2" id="cBI-IZ-Lik"/>
+                <outlet property="registerButton" destination="miu-QW-YX5" id="twK-pp-VXf"/>
+                <outlet property="userNameTextField" destination="Nee-g0-GnV" id="SdR-js-9Is"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="OJB-pL-60w">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjG-Qu-etx">
+                    <rect key="frame" x="5" y="22" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="SjG-Qu-etx" secondAttribute="height" multiplier="1:1" id="JOh-uq-Oqe"/>
+                        <constraint firstAttribute="width" constant="40" id="Xzc-Dk-9wy"/>
+                    </constraints>
+                    <state key="normal" image="nav_back"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="Yz5-gp-YI3"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nee-g0-GnV" customClass="WJTitleTextField" customModule="DailyNote" customModuleProvider="target">
+                    <rect key="frame" x="20" y="100" width="335" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jSD-dU-1xd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="用户名："/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="请输入用户名"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabelWidth">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabelWidth">
+                            <real key="value" value="100"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="myTextFieldColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGT-rf-yc2" customClass="WJTitleTextField" customModule="DailyNote" customModuleProvider="target">
+                    <rect key="frame" x="20" y="160" width="335" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="密码："/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="请输入密码"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabelWidth">
+                            <real key="value" value="100"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="myTextFieldColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuU-G7-aKu" customClass="WJTitleTextField" customModule="DailyNote" customModuleProvider="target">
+                    <rect key="frame" x="20" y="220" width="335" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="确认密码："/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="请确认密码"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="titleLabelWidth">
+                            <real key="value" value="100"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="myTextFieldColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miu-QW-YX5">
+                    <rect key="frame" x="20" y="290" width="335" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bw1-wj-PcB"/>
+                    </constraints>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="4WO-cV-pSz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xuU-G7-aKu" firstAttribute="height" secondItem="Nee-g0-GnV" secondAttribute="height" id="6oz-Yh-3oY"/>
+                <constraint firstAttribute="bottom" secondItem="OJB-pL-60w" secondAttribute="bottom" id="8Mg-8g-Y0V"/>
+                <constraint firstAttribute="trailing" secondItem="Nee-g0-GnV" secondAttribute="trailing" constant="20" id="Chl-Oy-fc8"/>
+                <constraint firstItem="xuU-G7-aKu" firstAttribute="trailing" secondItem="Nee-g0-GnV" secondAttribute="trailing" id="Ddi-wm-t4B"/>
+                <constraint firstItem="OJB-pL-60w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ERu-wf-61u"/>
+                <constraint firstItem="xuU-G7-aKu" firstAttribute="leading" secondItem="Nee-g0-GnV" secondAttribute="leading" id="Eyn-pF-BdE"/>
+                <constraint firstItem="Nee-g0-GnV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="SDT-9S-xfx"/>
+                <constraint firstItem="miu-QW-YX5" firstAttribute="trailing" secondItem="Nee-g0-GnV" secondAttribute="trailing" id="SIE-v8-n0y"/>
+                <constraint firstItem="eGT-rf-yc2" firstAttribute="leading" secondItem="Nee-g0-GnV" secondAttribute="leading" id="Uqs-u9-TVe"/>
+                <constraint firstItem="miu-QW-YX5" firstAttribute="top" secondItem="xuU-G7-aKu" secondAttribute="bottom" constant="30" id="XzT-Uc-P0F"/>
+                <constraint firstItem="eGT-rf-yc2" firstAttribute="top" secondItem="Nee-g0-GnV" secondAttribute="bottom" constant="20" id="YXf-IC-2sC"/>
+                <constraint firstAttribute="trailing" secondItem="OJB-pL-60w" secondAttribute="trailing" id="bQD-pq-6hQ"/>
+                <constraint firstItem="eGT-rf-yc2" firstAttribute="height" secondItem="Nee-g0-GnV" secondAttribute="height" id="bxD-ha-4dB"/>
+                <constraint firstItem="OJB-pL-60w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eac-j0-Krm"/>
+                <constraint firstItem="SjG-Qu-etx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="5" id="gNz-gB-FZF"/>
+                <constraint firstItem="miu-QW-YX5" firstAttribute="leading" secondItem="Nee-g0-GnV" secondAttribute="leading" id="glX-v6-Blf"/>
+                <constraint firstItem="Nee-g0-GnV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="idj-wy-svG"/>
+                <constraint firstItem="SjG-Qu-etx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="lGt-rI-yfs"/>
+                <constraint firstItem="eGT-rf-yc2" firstAttribute="trailing" secondItem="Nee-g0-GnV" secondAttribute="trailing" id="miI-Bj-Bd5"/>
+                <constraint firstItem="xuU-G7-aKu" firstAttribute="top" secondItem="eGT-rf-yc2" secondAttribute="bottom" constant="20" id="tGO-pA-2gD"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_bg" width="207" height="368"/>
+        <image name="nav_back" width="30" height="30"/>
+    </resources>
+</document>

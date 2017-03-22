@@ -1,0 +1,7 @@
+platform:ios, '8.0'
+target 'DailyNote' do
+use_frameworks!
+    pod 'BmobSDK'
+    pod 'SnapKit'
+    pod 'CorePlot'
+end

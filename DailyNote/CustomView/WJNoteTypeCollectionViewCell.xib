@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WJNoteTypeCollectionViewCell" id="gTV-IL-0wX" customClass="WJNoteTypeCollectionViewCell" customModule="DailyNote" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Af9-40-AmG">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mark" translatesAutoresizingMaskIntoConstraints="NO" id="ojd-JV-Zff">
+                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="9pM-6m-YA1"/>
+                            <constraint firstAttribute="width" secondItem="ojd-JV-Zff" secondAttribute="height" multiplier="1:1" id="nUx-CE-L7m"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Af9-40-AmG" secondAttribute="trailing" id="Cl8-43-5dr"/>
+                <constraint firstItem="Af9-40-AmG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="J7f-F5-HhP"/>
+                <constraint firstAttribute="bottom" secondItem="Af9-40-AmG" secondAttribute="bottom" id="RPW-uC-36l"/>
+                <constraint firstItem="ojd-JV-Zff" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="W7m-Sz-tQQ"/>
+                <constraint firstItem="Af9-40-AmG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tuJ-0R-lle"/>
+                <constraint firstItem="ojd-JV-Zff" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uPE-tM-uQE"/>
+            </constraints>
+            <size key="customSize" width="109" height="84"/>
+            <connections>
+                <outlet property="label" destination="Af9-40-AmG" id="XnK-dw-fwh"/>
+                <outlet property="markImageView" destination="ojd-JV-Zff" id="L9R-EN-ear"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="71"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="mark" width="30" height="30"/>
+    </resources>
+</document>

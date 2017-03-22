@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GI7-ce-5Sb">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WJHomeViewController" customModule="DailyNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hYQ-qA-OO5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="EAt-iU-BTl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WAK-KN-GRY"/>
+                                </connections>
+                            </tableView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oTN-PO-yae">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <datePicker alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="xKR-Ux-7or">
+                                        <rect key="frame" x="0.0" y="667" width="375" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="bTW-80-M3W"/>
+                                        </constraints>
+                                        <date key="date" timeIntervalSinceReferenceDate="507026485.93147802">
+                                            <!--2017-01-25 08:41:25 +0000-->
+                                        </date>
+                                        <date key="minimumDate" timeIntervalSinceReferenceDate="504961200">
+                                            <!--2017-01-01 11:00:00 +0000-->
+                                        </date>
+                                        <connections>
+                                            <action selector="datePickerViewAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="YGs-ex-4dx"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="xKR-Ux-7or" firstAttribute="leading" secondItem="oTN-PO-yae" secondAttribute="leading" id="4C1-8u-fXH"/>
+                                    <constraint firstAttribute="trailing" secondItem="xKR-Ux-7or" secondAttribute="trailing" id="UZK-yq-TRd"/>
+                                    <constraint firstAttribute="bottom" secondItem="xKR-Ux-7or" secondAttribute="bottom" constant="-150" id="fyM-ih-pI2"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AG9-k8-18w" appends="YES" id="DpP-pH-zpO"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hYQ-qA-OO5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5Ea-UP-e81"/>
+                            <constraint firstItem="oTN-PO-yae" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ioj-AB-zjE"/>
+                            <constraint firstAttribute="bottom" secondItem="hYQ-qA-OO5" secondAttribute="bottom" id="IxC-QM-Daq"/>
+                            <constraint firstAttribute="trailing" secondItem="oTN-PO-yae" secondAttribute="trailing" id="P35-C3-izu"/>
+                            <constraint firstItem="hYQ-qA-OO5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bu5-u7-SiB"/>
+                            <constraint firstAttribute="trailing" secondItem="hYQ-qA-OO5" secondAttribute="trailing" id="fyh-Aq-KJT"/>
+                            <constraint firstItem="oTN-PO-yae" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hIN-7h-k1b"/>
+                            <constraint firstAttribute="bottom" secondItem="oTN-PO-yae" secondAttribute="bottom" id="vwN-hQ-vCv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7k3-Jd-q1L">
+                        <barButtonItem key="leftBarButtonItem" image="setting" id="z9a-bq-Epr">
+                            <connections>
+                                <action selector="settingAction:" destination="BYZ-38-t0r" id="Pf2-FV-yV6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="add" id="5NB-71-uSv">
+                            <connections>
+                                <action selector="addNoteAction:" destination="BYZ-38-t0r" id="Hes-Wb-SWe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="datePickerView" destination="xKR-Ux-7or" id="Fnp-s8-vm4"/>
+                        <outlet property="datePickerViewBgView" destination="oTN-PO-yae" id="zna-Ws-MwV"/>
+                        <outlet property="myTableView" destination="hYQ-qA-OO5" id="nRO-lH-t8I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AG9-k8-18w">
+                    <connections>
+                        <action selector="datePickerViewBgViewTapAction:" destination="BYZ-38-t0r" id="rxZ-x7-7i3"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1009" y="-561"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dau-Jk-EoA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GI7-ce-5Sb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OU1-DT-jI1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="CO7-yx-sIj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lpq-DQ-IhV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="-560.86956521739137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="30" height="30"/>
+        <image name="setting" width="30" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DF56FBD326E82E90A0996A3 /* Pods_DailyNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704AE59E5FFA4A8AE46596C2 /* Pods_DailyNote.framework */; };
+		960768AA1E38B4150080F722 /* WJLocalNotificationUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960768A91E38B4150080F722 /* WJLocalNotificationUtils.swift */; };
+		961F2A151E48C53D00D27DC9 /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F2A141E48C53D00D27DC9 /* DateExtention.swift */; };
+		961F2A171E504AE600D27DC9 /* WJHomeStatisticDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F2A161E504AE600D27DC9 /* WJHomeStatisticDataModel.swift */; };
+		961F2A191E5053CF00D27DC9 /* WJPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F2A181E5053CF00D27DC9 /* WJPieChartView.swift */; };
+		961F2A281E5DDC9F00D27DC9 /* WJCommonContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F2A261E5DDC9F00D27DC9 /* WJCommonContentViewController.swift */; };
+		961F2A291E5DDC9F00D27DC9 /* WJCommonContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F2A271E5DDC9F00D27DC9 /* WJCommonContentViewController.xib */; };
+		961F2A2C1E67109600D27DC9 /* WJNoteContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961F2A2A1E67109600D27DC9 /* WJNoteContentTableViewCell.swift */; };
+		961F2A2D1E67109600D27DC9 /* WJNoteContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 961F2A2B1E67109600D27DC9 /* WJNoteContentTableViewCell.xib */; };
+		964DE1241E1162B500263C05 /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE1231E1162B500263C05 /* StringExtention.swift */; };
+		964DE1261E1162C900263C05 /* ArrayExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE1251E1162C900263C05 /* ArrayExtention.swift */; };
+		964DE12A1E116A4200263C05 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE1291E116A4200263C05 /* UIColorExtention.swift */; };
+		964DE12C1E1400E700263C05 /* WJAddNoteItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE12B1E1400E700263C05 /* WJAddNoteItemViewModel.swift */; };
+		964DE1311E15495D00263C05 /* WJNoteTypeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964DE12F1E15495D00263C05 /* WJNoteTypeCollectionViewCell.swift */; };
+		964DE1321E15495D00263C05 /* WJNoteTypeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964DE1301E15495D00263C05 /* WJNoteTypeCollectionViewCell.xib */; };
+		9673DBE31DC5D34400DE70D4 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673DBE21DC5D34400DE70D4 /* Common.swift */; };
+		9673DBE71DC5D8F800DE70D4 /* WJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673DBE61DC5D8F800DE70D4 /* WJBaseViewController.swift */; };
+		9673DBEE1DC5DE7200DE70D4 /* WJLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673DBEC1DC5DE7200DE70D4 /* WJLoginViewController.swift */; };
+		9673DBEF1DC5DE7200DE70D4 /* WJLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9673DBED1DC5DE7200DE70D4 /* WJLoginViewController.xib */; };
+		9673DBF21DC5DF7E00DE70D4 /* WJRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673DBF01DC5DF7E00DE70D4 /* WJRegisterViewController.swift */; };
+		9673DBF31DC5DF7E00DE70D4 /* WJRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9673DBF11DC5DF7E00DE70D4 /* WJRegisterViewController.xib */; };
+		9673DBF51DC5DFD700DE70D4 /* WJTitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9673DBF41DC5DFD700DE70D4 /* WJTitleTextField.swift */; };
+		96A21B861E76C0FB007C01F4 /* WJCommonContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A21B851E76C0FB007C01F4 /* WJCommonContentManager.swift */; };
+		96A21B8B1E76CA15007C01F4 /* WJContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A21B891E76CA15007C01F4 /* WJContentViewController.swift */; };
+		96A21B8C1E76CA15007C01F4 /* WJContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96A21B8A1E76CA15007C01F4 /* WJContentViewController.xib */; };
+		96B0A1861DD2106C0086AA46 /* WJSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0A1841DD2106C0086AA46 /* WJSettingViewController.swift */; };
+		96B0A1871DD2106C0086AA46 /* WJSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B0A1851DD2106C0086AA46 /* WJSettingViewController.xib */; };
+		96B0A18B1DD21F3C0086AA46 /* WJAddNoteItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0A1891DD21F3C0086AA46 /* WJAddNoteItemViewController.swift */; };
+		96B0A18C1DD21F3C0086AA46 /* WJAddNoteItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B0A18A1DD21F3C0086AA46 /* WJAddNoteItemViewController.xib */; };
+		96B6DC0A1DD85A4E0069300F /* WJPopupDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6DC091DD85A4E0069300F /* WJPopupDatePickerView.swift */; };
+		96B6DC0D1DD85BBD0069300F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B6DC0C1DD85BBD0069300F /* Utility.swift */; };
+		96C29FC11E76D72C0075F798 /* WJCommonContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C29FBF1E76D72C0075F798 /* WJCommonContentCollectionViewCell.swift */; };
+		96C29FC21E76D72C0075F798 /* WJCommonContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C29FC01E76D72C0075F798 /* WJCommonContentCollectionViewCell.xib */; };
+		96CE02231DD0BC6200F059FD /* WJNoteItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE02211DD0BC6200F059FD /* WJNoteItemTableViewCell.swift */; };
+		96CE02241DD0BC6200F059FD /* WJNoteItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96CE02221DD0BC6200F059FD /* WJNoteItemTableViewCell.xib */; };
+		96CE02261DD0C69B00F059FD /* WJNoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE02251DD0C69B00F059FD /* WJNoteItem.swift */; };
+		96CE02281DD0C6B100F059FD /* WJHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CE02271DD0C6B100F059FD /* WJHomeViewModel.swift */; };
+		96DE708D1E1EA078000B5FFF /* WJNoteTypeManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE708B1E1EA078000B5FFF /* WJNoteTypeManagerViewController.swift */; };
+		96DE708E1E1EA078000B5FFF /* WJNoteTypeManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96DE708C1E1EA078000B5FFF /* WJNoteTypeManagerViewController.xib */; };
+		96DE70911E207998000B5FFF /* WJNoteTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE708F1E207998000B5FFF /* WJNoteTypeViewController.swift */; };
+		96DE70921E207998000B5FFF /* WJNoteTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96DE70901E207998000B5FFF /* WJNoteTypeViewController.xib */; };
+		96DE70941E20875E000B5FFF /* WJNoteTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE70931E20875E000B5FFF /* WJNoteTypeViewModel.swift */; };
+		96DE70961E20AE12000B5FFF /* WJNoteTypeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE70951E20AE12000B5FFF /* WJNoteTypeManager.swift */; };
+		96E063D31DC5A26400BB410F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E063D21DC5A26400BB410F /* AppDelegate.swift */; };
+		96E063D51DC5A26400BB410F /* WJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E063D41DC5A26400BB410F /* WJHomeViewController.swift */; };
+		96E063D81DC5A26400BB410F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E063D61DC5A26400BB410F /* Main.storyboard */; };
+		96E063DA1DC5A26400BB410F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E063D91DC5A26400BB410F /* Assets.xcassets */; };
+		96E063DD1DC5A26400BB410F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E063DB1DC5A26400BB410F /* LaunchScreen.storyboard */; };
+		96E063E81DC5A26400BB410F /* DailyNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E063E71DC5A26400BB410F /* DailyNoteTests.swift */; };
+		96E063F31DC5A26400BB410F /* DailyNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E063F21DC5A26400BB410F /* DailyNoteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96E063E41DC5A26400BB410F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E063C71DC5A26400BB410F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E063CE1DC5A26400BB410F;
+			remoteInfo = DailyNote;
+		};
+		96E063EF1DC5A26400BB410F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E063C71DC5A26400BB410F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E063CE1DC5A26400BB410F;
+			remoteInfo = DailyNote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		704AE59E5FFA4A8AE46596C2 /* Pods_DailyNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		960768A91E38B4150080F722 /* WJLocalNotificationUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJLocalNotificationUtils.swift; sourceTree = "<group>"; };
+		961F2A141E48C53D00D27DC9 /* DateExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtention.swift; path = Extention/DateExtention.swift; sourceTree = "<group>"; };
+		961F2A161E504AE600D27DC9 /* WJHomeStatisticDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJHomeStatisticDataModel.swift; sourceTree = "<group>"; };
+		961F2A181E5053CF00D27DC9 /* WJPieChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJPieChartView.swift; sourceTree = "<group>"; };
+		961F2A261E5DDC9F00D27DC9 /* WJCommonContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJCommonContentViewController.swift; sourceTree = "<group>"; };
+		961F2A271E5DDC9F00D27DC9 /* WJCommonContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJCommonContentViewController.xib; sourceTree = "<group>"; };
+		961F2A2A1E67109600D27DC9 /* WJNoteContentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJNoteContentTableViewCell.swift; sourceTree = "<group>"; };
+		961F2A2B1E67109600D27DC9 /* WJNoteContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJNoteContentTableViewCell.xib; sourceTree = "<group>"; };
+		964DE1231E1162B500263C05 /* StringExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtention.swift; path = Extention/StringExtention.swift; sourceTree = "<group>"; };
+		964DE1251E1162C900263C05 /* ArrayExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtention.swift; path = Extention/ArrayExtention.swift; sourceTree = "<group>"; };
+		964DE1291E116A4200263C05 /* UIColorExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtention.swift; path = Extention/UIColorExtention.swift; sourceTree = "<group>"; };
+		964DE12B1E1400E700263C05 /* WJAddNoteItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJAddNoteItemViewModel.swift; sourceTree = "<group>"; };
+		964DE12F1E15495D00263C05 /* WJNoteTypeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJNoteTypeCollectionViewCell.swift; sourceTree = "<group>"; };
+		964DE1301E15495D00263C05 /* WJNoteTypeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJNoteTypeCollectionViewCell.xib; sourceTree = "<group>"; };
+		9673DBDD1DC5D2EB00DE70D4 /* DailyNote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DailyNote-Bridging-Header.h"; sourceTree = "<group>"; };
+		9673DBE21DC5D34400DE70D4 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		9673DBE61DC5D8F800DE70D4 /* WJBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJBaseViewController.swift; sourceTree = "<group>"; };
+		9673DBEC1DC5DE7200DE70D4 /* WJLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJLoginViewController.swift; sourceTree = "<group>"; };
+		9673DBED1DC5DE7200DE70D4 /* WJLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJLoginViewController.xib; sourceTree = "<group>"; };
+		9673DBF01DC5DF7E00DE70D4 /* WJRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJRegisterViewController.swift; sourceTree = "<group>"; };
+		9673DBF11DC5DF7E00DE70D4 /* WJRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJRegisterViewController.xib; sourceTree = "<group>"; };
+		9673DBF41DC5DFD700DE70D4 /* WJTitleTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJTitleTextField.swift; sourceTree = "<group>"; };
+		96A21B851E76C0FB007C01F4 /* WJCommonContentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJCommonContentManager.swift; sourceTree = "<group>"; };
+		96A21B891E76CA15007C01F4 /* WJContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJContentViewController.swift; sourceTree = "<group>"; };
+		96A21B8A1E76CA15007C01F4 /* WJContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJContentViewController.xib; sourceTree = "<group>"; };
+		96B0A1841DD2106C0086AA46 /* WJSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJSettingViewController.swift; sourceTree = "<group>"; };
+		96B0A1851DD2106C0086AA46 /* WJSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJSettingViewController.xib; sourceTree = "<group>"; };
+		96B0A1891DD21F3C0086AA46 /* WJAddNoteItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJAddNoteItemViewController.swift; sourceTree = "<group>"; };
+		96B0A18A1DD21F3C0086AA46 /* WJAddNoteItemViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJAddNoteItemViewController.xib; sourceTree = "<group>"; };
+		96B6DC091DD85A4E0069300F /* WJPopupDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJPopupDatePickerView.swift; sourceTree = "<group>"; };
+		96B6DC0C1DD85BBD0069300F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		96C29FBF1E76D72C0075F798 /* WJCommonContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJCommonContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		96C29FC01E76D72C0075F798 /* WJCommonContentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJCommonContentCollectionViewCell.xib; sourceTree = "<group>"; };
+		96CE02211DD0BC6200F059FD /* WJNoteItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJNoteItemTableViewCell.swift; sourceTree = "<group>"; };
+		96CE02221DD0BC6200F059FD /* WJNoteItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJNoteItemTableViewCell.xib; sourceTree = "<group>"; };
+		96CE02251DD0C69B00F059FD /* WJNoteItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJNoteItem.swift; sourceTree = "<group>"; };
+		96CE02271DD0C6B100F059FD /* WJHomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJHomeViewModel.swift; sourceTree = "<group>"; };
+		96CE33961DC5A4DE0062C656 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		96CE33981DC5A4E60062C656 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		96CE339A1DC5A4ED0062C656 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96CE339C1DC5A4F40062C656 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		96CE339E1DC5A4FC0062C656 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		96CE33A01DC5A5040062C656 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		96CE33A21DC5A50C0062C656 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		96CE33A41DC5A5180062C656 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		96CE33A61DC5A5220062C656 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		96CE33A81DC5A52B0062C656 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		96DE708B1E1EA078000B5FFF /* WJNoteTypeManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJNoteTypeManagerViewController.swift; sourceTree = "<group>"; };
+		96DE708C1E1EA078000B5FFF /* WJNoteTypeManagerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJNoteTypeManagerViewController.xib; sourceTree = "<group>"; };
+		96DE708F1E207998000B5FFF /* WJNoteTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJNoteTypeViewController.swift; sourceTree = "<group>"; };
+		96DE70901E207998000B5FFF /* WJNoteTypeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WJNoteTypeViewController.xib; sourceTree = "<group>"; };
+		96DE70931E20875E000B5FFF /* WJNoteTypeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJNoteTypeViewModel.swift; sourceTree = "<group>"; };
+		96DE70951E20AE12000B5FFF /* WJNoteTypeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WJNoteTypeManager.swift; sourceTree = "<group>"; };
+		96E063CF1DC5A26400BB410F /* DailyNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E063D21DC5A26400BB410F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96E063D41DC5A26400BB410F /* WJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WJHomeViewController.swift; path = ../WJHomeViewController.swift; sourceTree = "<group>"; };
+		96E063D71DC5A26400BB410F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96E063D91DC5A26400BB410F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96E063DC1DC5A26400BB410F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		96E063DE1DC5A26400BB410F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E063E31DC5A26400BB410F /* DailyNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E063E71DC5A26400BB410F /* DailyNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNoteTests.swift; sourceTree = "<group>"; };
+		96E063E91DC5A26400BB410F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E063EE1DC5A26400BB410F /* DailyNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E063F21DC5A26400BB410F /* DailyNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNoteUITests.swift; sourceTree = "<group>"; };
+		96E063F41DC5A26400BB410F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B83B87D8F6D96E387458072B /* Pods-DailyNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DailyNote/Pods-DailyNote.debug.xcconfig"; sourceTree = "<group>"; };
+		D7A38A621DE370BFDD97BF73 /* Pods-DailyNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-DailyNote/Pods-DailyNote.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96E063CC1DC5A26400BB410F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF56FBD326E82E90A0996A3 /* Pods_DailyNote.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E063E01DC5A26400BB410F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E063EB1DC5A26400BB410F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9673DBE11DC5D33300DE70D4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9673DBE21DC5D34400DE70D4 /* Common.swift */,
+				96DE70951E20AE12000B5FFF /* WJNoteTypeManager.swift */,
+				960768A91E38B4150080F722 /* WJLocalNotificationUtils.swift */,
+				96A21B851E76C0FB007C01F4 /* WJCommonContentManager.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9673DBE41DC5D8CF00DE70D4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9673DBEC1DC5DE7200DE70D4 /* WJLoginViewController.swift */,
+				9673DBED1DC5DE7200DE70D4 /* WJLoginViewController.xib */,
+				9673DBF01DC5DF7E00DE70D4 /* WJRegisterViewController.swift */,
+				9673DBF11DC5DF7E00DE70D4 /* WJRegisterViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		9673DBE51DC5D8E000DE70D4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9673DBE61DC5D8F800DE70D4 /* WJBaseViewController.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		9673DBF61DC5DFE200DE70D4 /* WJTitleTextField */ = {
+			isa = PBXGroup;
+			children = (
+				9673DBF41DC5DFD700DE70D4 /* WJTitleTextField.swift */,
+			);
+			path = WJTitleTextField;
+			sourceTree = "<group>";
+		};
+		96B0A1881DD210770086AA46 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				96B0A1841DD2106C0086AA46 /* WJSettingViewController.swift */,
+				96B0A1851DD2106C0086AA46 /* WJSettingViewController.xib */,
+				96DE708B1E1EA078000B5FFF /* WJNoteTypeManagerViewController.swift */,
+				96DE708C1E1EA078000B5FFF /* WJNoteTypeManagerViewController.xib */,
+				96DE708F1E207998000B5FFF /* WJNoteTypeViewController.swift */,
+				96DE70901E207998000B5FFF /* WJNoteTypeViewController.xib */,
+				961F2A261E5DDC9F00D27DC9 /* WJCommonContentViewController.swift */,
+				961F2A271E5DDC9F00D27DC9 /* WJCommonContentViewController.xib */,
+				96A21B891E76CA15007C01F4 /* WJContentViewController.swift */,
+				96A21B8A1E76CA15007C01F4 /* WJContentViewController.xib */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		96B6DC0B1DD85BAC0069300F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				96B6DC0C1DD85BBD0069300F /* Utility.swift */,
+				96B6DC101DD8AC8E0069300F /* Extention */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		96B6DC101DD8AC8E0069300F /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				964DE1251E1162C900263C05 /* ArrayExtention.swift */,
+				964DE1231E1162B500263C05 /* StringExtention.swift */,
+				964DE1291E116A4200263C05 /* UIColorExtention.swift */,
+				961F2A141E48C53D00D27DC9 /* DateExtention.swift */,
+			);
+			name = Extention;
+			sourceTree = "<group>";
+		};
+		96CE02201DD0BC6200F059FD /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				96CE02211DD0BC6200F059FD /* WJNoteItemTableViewCell.swift */,
+				96CE02221DD0BC6200F059FD /* WJNoteItemTableViewCell.xib */,
+				96B6DC091DD85A4E0069300F /* WJPopupDatePickerView.swift */,
+				964DE12F1E15495D00263C05 /* WJNoteTypeCollectionViewCell.swift */,
+				964DE1301E15495D00263C05 /* WJNoteTypeCollectionViewCell.xib */,
+				961F2A181E5053CF00D27DC9 /* WJPieChartView.swift */,
+				961F2A2A1E67109600D27DC9 /* WJNoteContentTableViewCell.swift */,
+				961F2A2B1E67109600D27DC9 /* WJNoteContentTableViewCell.xib */,
+				96C29FBF1E76D72C0075F798 /* WJCommonContentCollectionViewCell.swift */,
+				96C29FC01E76D72C0075F798 /* WJCommonContentCollectionViewCell.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		96CE338E1DC5A4BF0062C656 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96CE02251DD0C69B00F059FD /* WJNoteItem.swift */,
+				961F2A161E504AE600D27DC9 /* WJHomeStatisticDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96CE338F1DC5A4BF0062C656 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9673DBF61DC5DFE200DE70D4 /* WJTitleTextField */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		96CE33921DC5A4BF0062C656 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9673DBE51DC5D8E000DE70D4 /* Base */,
+				9673DBE41DC5D8CF00DE70D4 /* Login */,
+				96E063D41DC5A26400BB410F /* WJHomeViewController.swift */,
+				96B0A1881DD210770086AA46 /* Setting */,
+				96B0A1891DD21F3C0086AA46 /* WJAddNoteItemViewController.swift */,
+				96B0A18A1DD21F3C0086AA46 /* WJAddNoteItemViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		96CE33931DC5A4BF0062C656 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				96CE02271DD0C6B100F059FD /* WJHomeViewModel.swift */,
+				964DE12B1E1400E700263C05 /* WJAddNoteItemViewModel.swift */,
+				96DE70931E20875E000B5FFF /* WJNoteTypeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96CE33951DC5A4DE0062C656 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96CE33A81DC5A52B0062C656 /* libsqlite3.tbd */,
+				96CE33A61DC5A5220062C656 /* libicucore.tbd */,
+				96CE33A41DC5A5180062C656 /* libz.1.2.5.tbd */,
+				96CE33A21DC5A50C0062C656 /* SystemConfiguration.framework */,
+				96CE33A01DC5A5040062C656 /* CoreTelephony.framework */,
+				96CE339E1DC5A4FC0062C656 /* CFNetwork.framework */,
+				96CE339C1DC5A4F40062C656 /* MobileCoreServices.framework */,
+				96CE339A1DC5A4ED0062C656 /* CoreGraphics.framework */,
+				96CE33981DC5A4E60062C656 /* Security.framework */,
+				96CE33961DC5A4DE0062C656 /* CoreLocation.framework */,
+				704AE59E5FFA4A8AE46596C2 /* Pods_DailyNote.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96E063C61DC5A26400BB410F = {
+			isa = PBXGroup;
+			children = (
+				96E063D11DC5A26400BB410F /* DailyNote */,
+				96E063E61DC5A26400BB410F /* DailyNoteTests */,
+				96E063F11DC5A26400BB410F /* DailyNoteUITests */,
+				96E063D01DC5A26400BB410F /* Products */,
+				96CE33951DC5A4DE0062C656 /* Frameworks */,
+				E5406F11CD3EF29838E86879 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		96E063D01DC5A26400BB410F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96E063CF1DC5A26400BB410F /* DailyNote.app */,
+				96E063E31DC5A26400BB410F /* DailyNoteTests.xctest */,
+				96E063EE1DC5A26400BB410F /* DailyNoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96E063D11DC5A26400BB410F /* DailyNote */ = {
+			isa = PBXGroup;
+			children = (
+				96B6DC0B1DD85BAC0069300F /* Utility */,
+				96CE02201DD0BC6200F059FD /* CustomView */,
+				9673DBE11DC5D33300DE70D4 /* Common */,
+				96CE338E1DC5A4BF0062C656 /* Model */,
+				96CE338F1DC5A4BF0062C656 /* Tools */,
+				96CE33921DC5A4BF0062C656 /* ViewController */,
+				96CE33931DC5A4BF0062C656 /* ViewModel */,
+				96E064001DC5A26E00BB410F /* Supporting Files */,
+			);
+			path = DailyNote;
+			sourceTree = "<group>";
+		};
+		96E063E61DC5A26400BB410F /* DailyNoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				96E063E71DC5A26400BB410F /* DailyNoteTests.swift */,
+				96E063E91DC5A26400BB410F /* Info.plist */,
+			);
+			path = DailyNoteTests;
+			sourceTree = "<group>";
+		};
+		96E063F11DC5A26400BB410F /* DailyNoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96E063F21DC5A26400BB410F /* DailyNoteUITests.swift */,
+				96E063F41DC5A26400BB410F /* Info.plist */,
+			);
+			path = DailyNoteUITests;
+			sourceTree = "<group>";
+		};
+		96E064001DC5A26E00BB410F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96E063D61DC5A26400BB410F /* Main.storyboard */,
+				96E063D91DC5A26400BB410F /* Assets.xcassets */,
+				96E063D21DC5A26400BB410F /* AppDelegate.swift */,
+				96E063DB1DC5A26400BB410F /* LaunchScreen.storyboard */,
+				96E063DE1DC5A26400BB410F /* Info.plist */,
+				9673DBDD1DC5D2EB00DE70D4 /* DailyNote-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5406F11CD3EF29838E86879 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B83B87D8F6D96E387458072B /* Pods-DailyNote.debug.xcconfig */,
+				D7A38A621DE370BFDD97BF73 /* Pods-DailyNote.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96E063CE1DC5A26400BB410F /* DailyNote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E063F71DC5A26400BB410F /* Build configuration list for PBXNativeTarget "DailyNote" */;
+			buildPhases = (
+				B27B0FC15697A16472C0865D /* [CP] Check Pods Manifest.lock */,
+				96E063CB1DC5A26400BB410F /* Sources */,
+				96E063CC1DC5A26400BB410F /* Frameworks */,
+				96E063CD1DC5A26400BB410F /* Resources */,
+				4E17F79FFA5FCF5E1A0E3340 /* [CP] Embed Pods Frameworks */,
+				F52152009482E0048D8E3F70 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DailyNote;
+			productName = DailyNote;
+			productReference = 96E063CF1DC5A26400BB410F /* DailyNote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96E063E21DC5A26400BB410F /* DailyNoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E063FA1DC5A26400BB410F /* Build configuration list for PBXNativeTarget "DailyNoteTests" */;
+			buildPhases = (
+				96E063DF1DC5A26400BB410F /* Sources */,
+				96E063E01DC5A26400BB410F /* Frameworks */,
+				96E063E11DC5A26400BB410F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96E063E51DC5A26400BB410F /* PBXTargetDependency */,
+			);
+			name = DailyNoteTests;
+			productName = DailyNoteTests;
+			productReference = 96E063E31DC5A26400BB410F /* DailyNoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96E063ED1DC5A26400BB410F /* DailyNoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E063FD1DC5A26400BB410F /* Build configuration list for PBXNativeTarget "DailyNoteUITests" */;
+			buildPhases = (
+				96E063EA1DC5A26400BB410F /* Sources */,
+				96E063EB1DC5A26400BB410F /* Frameworks */,
+				96E063EC1DC5A26400BB410F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96E063F01DC5A26400BB410F /* PBXTargetDependency */,
+			);
+			name = DailyNoteUITests;
+			productName = DailyNoteUITests;
+			productReference = 96E063EE1DC5A26400BB410F /* DailyNoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96E063C71DC5A26400BB410F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WJ;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = WangJace;
+				TargetAttributes = {
+					96E063CE1DC5A26400BB410F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JABKNBG655;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					96E063E21DC5A26400BB410F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 96E063CE1DC5A26400BB410F;
+					};
+					96E063ED1DC5A26400BB410F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 96E063CE1DC5A26400BB410F;
+					};
+				};
+			};
+			buildConfigurationList = 96E063CA1DC5A26400BB410F /* Build configuration list for PBXProject "DailyNote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96E063C61DC5A26400BB410F;
+			productRefGroup = 96E063D01DC5A26400BB410F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96E063CE1DC5A26400BB410F /* DailyNote */,
+				96E063E21DC5A26400BB410F /* DailyNoteTests */,
+				96E063ED1DC5A26400BB410F /* DailyNoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96E063CD1DC5A26400BB410F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9673DBF31DC5DF7E00DE70D4 /* WJRegisterViewController.xib in Resources */,
+				96DE70921E207998000B5FFF /* WJNoteTypeViewController.xib in Resources */,
+				961F2A291E5DDC9F00D27DC9 /* WJCommonContentViewController.xib in Resources */,
+				96B0A1871DD2106C0086AA46 /* WJSettingViewController.xib in Resources */,
+				961F2A2D1E67109600D27DC9 /* WJNoteContentTableViewCell.xib in Resources */,
+				96A21B8C1E76CA15007C01F4 /* WJContentViewController.xib in Resources */,
+				96E063DD1DC5A26400BB410F /* LaunchScreen.storyboard in Resources */,
+				96E063DA1DC5A26400BB410F /* Assets.xcassets in Resources */,
+				96C29FC21E76D72C0075F798 /* WJCommonContentCollectionViewCell.xib in Resources */,
+				96E063D81DC5A26400BB410F /* Main.storyboard in Resources */,
+				96DE708E1E1EA078000B5FFF /* WJNoteTypeManagerViewController.xib in Resources */,
+				96CE02241DD0BC6200F059FD /* WJNoteItemTableViewCell.xib in Resources */,
+				96B0A18C1DD21F3C0086AA46 /* WJAddNoteItemViewController.xib in Resources */,
+				964DE1321E15495D00263C05 /* WJNoteTypeCollectionViewCell.xib in Resources */,
+				9673DBEF1DC5DE7200DE70D4 /* WJLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E063E11DC5A26400BB410F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E063EC1DC5A26400BB410F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E17F79FFA5FCF5E1A0E3340 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyNote/Pods-DailyNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B27B0FC15697A16472C0865D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F52152009482E0048D8E3F70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DailyNote/Pods-DailyNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96E063CB1DC5A26400BB410F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96B6DC0D1DD85BBD0069300F /* Utility.swift in Sources */,
+				9673DBE71DC5D8F800DE70D4 /* WJBaseViewController.swift in Sources */,
+				96E063D51DC5A26400BB410F /* WJHomeViewController.swift in Sources */,
+				96B0A18B1DD21F3C0086AA46 /* WJAddNoteItemViewController.swift in Sources */,
+				964DE1241E1162B500263C05 /* StringExtention.swift in Sources */,
+				96CE02261DD0C69B00F059FD /* WJNoteItem.swift in Sources */,
+				964DE1311E15495D00263C05 /* WJNoteTypeCollectionViewCell.swift in Sources */,
+				96B0A1861DD2106C0086AA46 /* WJSettingViewController.swift in Sources */,
+				9673DBF21DC5DF7E00DE70D4 /* WJRegisterViewController.swift in Sources */,
+				96DE708D1E1EA078000B5FFF /* WJNoteTypeManagerViewController.swift in Sources */,
+				964DE12C1E1400E700263C05 /* WJAddNoteItemViewModel.swift in Sources */,
+				96A21B861E76C0FB007C01F4 /* WJCommonContentManager.swift in Sources */,
+				961F2A191E5053CF00D27DC9 /* WJPieChartView.swift in Sources */,
+				9673DBF51DC5DFD700DE70D4 /* WJTitleTextField.swift in Sources */,
+				96C29FC11E76D72C0075F798 /* WJCommonContentCollectionViewCell.swift in Sources */,
+				9673DBE31DC5D34400DE70D4 /* Common.swift in Sources */,
+				961F2A281E5DDC9F00D27DC9 /* WJCommonContentViewController.swift in Sources */,
+				960768AA1E38B4150080F722 /* WJLocalNotificationUtils.swift in Sources */,
+				96DE70961E20AE12000B5FFF /* WJNoteTypeManager.swift in Sources */,
+				96B6DC0A1DD85A4E0069300F /* WJPopupDatePickerView.swift in Sources */,
+				961F2A171E504AE600D27DC9 /* WJHomeStatisticDataModel.swift in Sources */,
+				96DE70911E207998000B5FFF /* WJNoteTypeViewController.swift in Sources */,
+				961F2A151E48C53D00D27DC9 /* DateExtention.swift in Sources */,
+				96CE02231DD0BC6200F059FD /* WJNoteItemTableViewCell.swift in Sources */,
+				964DE1261E1162C900263C05 /* ArrayExtention.swift in Sources */,
+				96A21B8B1E76CA15007C01F4 /* WJContentViewController.swift in Sources */,
+				964DE12A1E116A4200263C05 /* UIColorExtention.swift in Sources */,
+				96CE02281DD0C6B100F059FD /* WJHomeViewModel.swift in Sources */,
+				9673DBEE1DC5DE7200DE70D4 /* WJLoginViewController.swift in Sources */,
+				961F2A2C1E67109600D27DC9 /* WJNoteContentTableViewCell.swift in Sources */,
+				96DE70941E20875E000B5FFF /* WJNoteTypeViewModel.swift in Sources */,
+				96E063D31DC5A26400BB410F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E063DF1DC5A26400BB410F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E063E81DC5A26400BB410F /* DailyNoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E063EA1DC5A26400BB410F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E063F31DC5A26400BB410F /* DailyNoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96E063E51DC5A26400BB410F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96E063CE1DC5A26400BB410F /* DailyNote */;
+			targetProxy = 96E063E41DC5A26400BB410F /* PBXContainerItemProxy */;
+		};
+		96E063F01DC5A26400BB410F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96E063CE1DC5A26400BB410F /* DailyNote */;
+			targetProxy = 96E063EF1DC5A26400BB410F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96E063D61DC5A26400BB410F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E063D71DC5A26400BB410F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96E063DB1DC5A26400BB410F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E063DC1DC5A26400BB410F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96E063F51DC5A26400BB410F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96E063F61DC5A26400BB410F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96E063F81DC5A26400BB410F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B83B87D8F6D96E387458072B /* Pods-DailyNote.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JABKNBG655;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DailyNote/Tools/Bmob",
+				);
+				INFOPLIST_FILE = DailyNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WangJace.DailyNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DailyNote/DailyNote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		96E063F91DC5A26400BB410F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A38A621DE370BFDD97BF73 /* Pods-DailyNote.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = JABKNBG655;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DailyNote/Tools/Bmob",
+				);
+				INFOPLIST_FILE = DailyNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WangJace.DailyNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DailyNote/DailyNote-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		96E063FB1DC5A26400BB410F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DailyNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WangJace.DailyNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyNote.app/DailyNote";
+			};
+			name = Debug;
+		};
+		96E063FC1DC5A26400BB410F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DailyNoteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WangJace.DailyNoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DailyNote.app/DailyNote";
+			};
+			name = Release;
+		};
+		96E063FE1DC5A26400BB410F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DailyNoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WangJace.DailyNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DailyNote;
+			};
+			name = Debug;
+		};
+		96E063FF1DC5A26400BB410F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DailyNoteUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WangJace.DailyNoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DailyNote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96E063CA1DC5A26400BB410F /* Build configuration list for PBXProject "DailyNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E063F51DC5A26400BB410F /* Debug */,
+				96E063F61DC5A26400BB410F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E063F71DC5A26400BB410F /* Build configuration list for PBXNativeTarget "DailyNote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E063F81DC5A26400BB410F /* Debug */,
+				96E063F91DC5A26400BB410F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E063FA1DC5A26400BB410F /* Build configuration list for PBXNativeTarget "DailyNoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E063FB1DC5A26400BB410F /* Debug */,
+				96E063FC1DC5A26400BB410F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E063FD1DC5A26400BB410F /* Build configuration list for PBXNativeTarget "DailyNoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E063FE1DC5A26400BB410F /* Debug */,
+				96E063FF1DC5A26400BB410F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96E063C71DC5A26400BB410F /* Project object */;
+}

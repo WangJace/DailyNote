@@ -1,0 +1,6 @@
+framework module Pods_DailyNote {
+  umbrella header "Pods-DailyNote-umbrella.h"
+
+  export *
+  module * { export * }
+}

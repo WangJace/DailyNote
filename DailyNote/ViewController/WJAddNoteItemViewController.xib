@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WJAddNoteItemViewController" customModule="DailyNote" customModuleProvider="target">
+            <connections>
+                <outlet property="commonContentCollectionView" destination="yxP-5q-Pcq" id="LOd-uj-zOP"/>
+                <outlet property="contentTextView" destination="Y2u-yu-719" id="NgW-O1-0ba"/>
+                <outlet property="datePickerView" destination="4JF-eb-Lud" id="oxL-Jf-avh"/>
+                <outlet property="datePickerViewBgView" destination="SyU-eT-rXd" id="alh-XD-web"/>
+                <outlet property="myPickerView" destination="NM1-RR-cFM" id="2gL-3n-pUE"/>
+                <outlet property="noteTypeCollectionView" destination="Jqs-Kw-psV" id="MBo-rZ-9YS"/>
+                <outlet property="popupPickerViewBottomSpace" destination="n1v-vy-vcP" id="MDZ-46-58h"/>
+                <outlet property="timeButton" destination="mPV-Ku-nO7" id="2PF-0W-xtF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPV-Ku-nO7">
+                    <rect key="frame" x="0.0" y="84" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="pFc-Eu-0bD"/>
+                    </constraints>
+                    <state key="normal" title="时间">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="timeButtonAction:" destination="-1" eventType="touchUpInside" id="1qr-0N-US4"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clickIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="Mc3-SU-XCQ">
+                    <rect key="frame" x="345" y="91" width="30" height="30"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1001" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Jqs-Kw-psV">
+                    <rect key="frame" x="0.0" y="138" width="375" height="100"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="YMX-WB-fNV"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BWB-NV-UHT">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y2u-yu-719">
+                    <rect key="frame" x="20" y="258" width="345" height="304"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1002" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="yxP-5q-Pcq">
+                    <rect key="frame" x="0.0" y="582" width="375" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="5L1-ls-nWg"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="yuD-aF-QAh">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NM1-RR-cFM" customClass="WJPopupDatePickerView" customModule="DailyNote" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="667" width="375" height="262"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="262" id="k7C-pL-esO"/>
+                    </constraints>
+                </view>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SyU-eT-rXd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <datePicker alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="4JF-eb-Lud">
+                            <rect key="frame" x="0.0" y="667" width="375" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="jAx-1E-nlW"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="507030928.25262898">
+                                <!--2017-01-25 09:55:28 +0000-->
+                            </date>
+                            <date key="minimumDate" timeIntervalSinceReferenceDate="504961200">
+                                <!--2017-01-01 11:00:00 +0000-->
+                            </date>
+                            <connections>
+                                <action selector="datePickerViewAction:" destination="-1" eventType="valueChanged" id="dsj-Rd-Jro"/>
+                            </connections>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4JF-eb-Lud" secondAttribute="bottom" constant="-150" id="5Az-QX-2CU"/>
+                        <constraint firstItem="4JF-eb-Lud" firstAttribute="leading" secondItem="SyU-eT-rXd" secondAttribute="leading" id="Pps-QU-fxm"/>
+                        <constraint firstAttribute="trailing" secondItem="4JF-eb-Lud" secondAttribute="trailing" id="UYT-Aw-DVz"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="tZX-ho-yax" appends="YES" id="KRr-Lc-NJA"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yxP-5q-Pcq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0iP-gl-uYt"/>
+                <constraint firstAttribute="trailing" secondItem="NM1-RR-cFM" secondAttribute="trailing" id="0kf-rA-dKb"/>
+                <constraint firstItem="Mc3-SU-XCQ" firstAttribute="trailing" secondItem="mPV-Ku-nO7" secondAttribute="trailing" id="3QB-L7-262"/>
+                <constraint firstItem="Jqs-Kw-psV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ayg-6a-3Bs"/>
+                <constraint firstItem="Jqs-Kw-psV" firstAttribute="top" secondItem="mPV-Ku-nO7" secondAttribute="bottom" constant="10" id="Dbv-Y0-s0a"/>
+                <constraint firstItem="SyU-eT-rXd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ENh-b9-T2u"/>
+                <constraint firstAttribute="trailing" secondItem="SyU-eT-rXd" secondAttribute="trailing" id="JeM-FY-w1p"/>
+                <constraint firstItem="Mc3-SU-XCQ" firstAttribute="centerY" secondItem="mPV-Ku-nO7" secondAttribute="centerY" id="M8Q-Yh-Pfh"/>
+                <constraint firstAttribute="trailing" secondItem="yxP-5q-Pcq" secondAttribute="trailing" id="Mlt-uS-H9h"/>
+                <constraint firstItem="yxP-5q-Pcq" firstAttribute="top" secondItem="Y2u-yu-719" secondAttribute="bottom" constant="20" id="OuN-2W-rlr"/>
+                <constraint firstItem="mPV-Ku-nO7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="Pz3-zr-OOS"/>
+                <constraint firstAttribute="bottom" secondItem="SyU-eT-rXd" secondAttribute="bottom" id="TNB-Sp-o1u"/>
+                <constraint firstItem="SyU-eT-rXd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Urk-5o-Mbi"/>
+                <constraint firstItem="mPV-Ku-nO7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V52-o3-RtO"/>
+                <constraint firstAttribute="trailing" secondItem="Jqs-Kw-psV" secondAttribute="trailing" id="WfL-88-Wjz"/>
+                <constraint firstItem="Y2u-yu-719" firstAttribute="top" secondItem="Jqs-Kw-psV" secondAttribute="bottom" constant="20" id="Y5i-5R-6vN"/>
+                <constraint firstItem="NM1-RR-cFM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bdQ-yr-2Ye"/>
+                <constraint firstAttribute="bottom" secondItem="yxP-5q-Pcq" secondAttribute="bottom" constant="5" id="dgL-dw-nGz"/>
+                <constraint firstItem="Y2u-yu-719" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dka-em-bqr"/>
+                <constraint firstAttribute="bottom" secondItem="NM1-RR-cFM" secondAttribute="bottom" constant="-262" id="n1v-vy-vcP"/>
+                <constraint firstAttribute="trailing" secondItem="Y2u-yu-719" secondAttribute="trailing" constant="10" id="tde-Sx-kY4"/>
+                <constraint firstAttribute="trailing" secondItem="mPV-Ku-nO7" secondAttribute="trailing" id="vKb-oj-9W2"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+        <tapGestureRecognizer id="tZX-ho-yax">
+            <connections>
+                <action selector="datePickerViewBgViewTapAction:" destination="-1" id="oSh-Ez-g3J"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="clickIndicator" width="30" height="30"/>
+    </resources>
+</document>
